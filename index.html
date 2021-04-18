@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CloudTraveller</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/jcrop/dist/jcrop.css">
+  <script src="https://unpkg.com/jcrop"></script>
+</head>
+
+<body>
+  
+  <header class='title'>
+    <img id="head-left" src='team_logo.gif' height=150>
+  </header>
+
+  <nav>
+    <a id='past',href="https://deco7180-c02t06.uqcloud.net/past%20cloudtraveller/index.html">Explore the past</a>
+  </nav>
+
+
+  <div class="camera0">
+    <section id="lens">
+      <canvas class="layer" id="bg" width="800" height="480"></canvas>
+      <canvas class="layer" id="wildanimal" width="800" height="480"></canvas>
+      <canvas class="layer" id="people" width="800" height="480"></canvas>
+      <canvas hidden="true" class="finallayer" id="finallayer" width="800" height="480"
+        crossorigin="anonymous"></canvas>
+    </section>
+
+    <section id="buttons">
+      <div id="Vspace">
+        <video id="v"></video>
+      </div>
+      
+      <img id="description" scr="" width='100' height='50'/>
+      <button id="animal">Meet Wildmates</button>
+      
+      <button id="person1">Take a photo</button>
+      <button id="confirm">Cheese</button>
+      <button id="bgclear">Restart</button>
+      
+    </section>
+
+  </div>
+
+  <section id="bgimages">
+    <img id="0" src="guiding_page.gif" width="800" height="480" />
+    <img id="1" src="bg_gallery/1-summer rocks.jpg" width="800" height="480" />
+    <img id="2" src="bg_gallery/3-au desert.jpg" width="800" height="480" />
+    <img id="3" src="bg_gallery/4-spring land.jpg" width="800" height="480" />
+    <img id="4" src="bg_gallery/5-spring-grass.png" width="800" height="480" />
+    <img id="5" src="bg_gallery/6-spring grass.jpg" width="800" height="480" />
+    <img id="6" src="bg_gallery/7-sumer water.jpg" width="800" height="480" />
+    <img id="7" src="bg_gallery/8-autum forest.jpg" width="800" height="480" />
+    <img id="8" src="bg_gallery/9-spring woods.jpg" width="800" height="480" />
+    <img id="9" src="bg_gallery/10-winter hill.jpg" width="800" height="480" />
+    <img id="10" src="bg_gallery/11-early spring hills.jpg" width="800" height="480" />
+    <img id="11" src="bg_gallery/12-snowymountain.png" width="800" height="480" />
+    <img id="12" src="bg_gallery/13-spring hills.jpg" width="800" height="480" />
+    
+  </section>
+
+  <!-- // preview the backbround
+  <div id="background1" class="back" style="display: none;" >
+    <div id="div1" class="camera">
+      <div id="close">
+        <span id="close-button">X</span>
+        <h2>Done</h2>
+      </div>
+      <div id="div2">
+        <img id="result" alt="2" src="">
+      </div>
+    </div>
+  </div>
+
+  <div id="personedit" class="back" style="display: none;" >
+    
+    <div id="div1" class="camera">
+
+      <div id="close">
+        <span id="close-button">X</span>
+        <h2>Done</h2>
+      </div>
+
+      <div id="div2">
+        <img id="photo" alt="2" src="">
+      </div>
+
+    </div>
+
+  </div>
+  -->
+
+  <canvas id="cam" alt="2" src="billboard4.png" hidden="true"></canvas>
+  <div id="background1" class="back" style="display: none;" >
+    <div id="div1" class="camera">
+      <div id="close">
+        <span id="close-button">X</span>
+        <h2>Welcome to the wild!</h2>
+      </div>
+      <div id="div2">
+        <img id="result" alt="2" src="">
+      </div>
+    </div>
+  </div>
+
+
+  
+  <footer width="800"></footer>
+      
+</body>
+
+<audio id="backaudio" src="Justblue.mp3" autoplay="true" ></audio>
+
+<audio id="cheese" src="shutter.mp3" autoplay="false" ></audio>
+
+
+<script src="js/script.js"></script>
+
+</html>

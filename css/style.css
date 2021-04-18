@@ -1,0 +1,255 @@
+body {
+    
+    background:black;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -10;
+}
+
+h2 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+header {
+    display: block;
+    background-color: rgb(0, 255, 85);
+    z-index: 40;
+}
+
+header img{
+    position: fixed;
+    z-index: 90;
+}
+
+nav {
+    float: right;
+    background-color: rgb(0, 255, 85);
+}
+
+nav a#past{
+    display: inline;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+
+footer{
+    text-align: center;
+    position: fixed;
+    z-index: 90;
+}
+
+.camera0 {
+    margin-top: 200px;
+    margin-left: 200px;
+    width: 1100px;
+    height: 580px;
+    background-color: transparent;
+    border: solid rgb(0, 255, 85);
+    border-width: 10px 5px 10px 15px;
+    border-style: outset,none,outset,outset;
+    border-radius: 2em;
+    position: fixed;
+    z-index: 4;
+    flex-direction: row;
+}
+
+
+
+#lens {
+    z-index: 3;
+}
+
+canvas {
+    /*margin-left: 50px;
+    margin-top:  50px;*/
+    position: fixed;
+    border: solid rgb(0, 255, 85);
+    border-width: 50px 0 50px 52px;
+    border-radius: 1em 0 0 1em;
+    
+    background: rgba(255, 255, 255, 0);
+    z-index: 4;
+}
+
+
+#bgimages {
+    display: absolute;
+    flex-direction: column;
+    /*position: absolute;*/
+    margin-left: 207px;
+    padding-top: 260px;
+    border-left: solid 60px rgba(0, 0, 0, 0);
+    border-right: solid 60px rgba(0, 0, 0, 0);
+}
+
+#bgimages img:not(:first-child){
+    -webkit-filter: opacity(0.5);
+    filter: opacity(0.5);
+}
+
+#buttons {
+    margin-top: 0px;
+    margin-left: 850px;
+    width: 250px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 255, 85);
+    border-radius: 0 1em 1em 0;
+
+}
+
+#description {
+    margin-left:35px;
+    height:80px;
+    width:185px;
+    background-color:black;
+    z-index: 100;
+
+}
+
+#Vspace {
+    width: 185px;
+    margin:50px 35px 25px 35px;
+    background-color: black;
+
+}
+
+#v{
+    margin-left: 30px;
+    width: 120px;
+    height: 100px;
+}
+
+button {
+    background-color:white; 
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    margin:15px 30px 15px 35px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+    z-index: 99;
+}
+
+#buttons button:hover {
+
+    background:rgb(0, 255, 85);
+    color: white;
+}
+
+#bgscroll {
+    margin-top: 50px;
+    margin-left:18%;
+    color: white;
+}
+
+#y{
+    color : white;
+    margin-left:40%;
+}
+
+#cam {
+    
+}
+
+footer {
+    margin-bottom: 0px;
+    border: solid 2px;
+    height: 250px;
+    display: absolute top;
+}
+
+
+#background1 {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    
+    z-index: 9999;
+}
+
+#div1 {
+    background: rgb(0, 255, 85);
+    width: 70%;
+    z-index: 1;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+span {
+    color: black;
+    padding-top: 12px;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+#div2 {
+    background: black;
+    margin: auto;
+    height: 620px;
+    width: 1100px;
+    padding: 0 20px;
+}
+
+#close {
+    padding: 2px;
+    background: (0, 255, 85);
+}
+
+#close-button {
+    float: right;
+    font-size: 30px;
+}
+
+#result {
+    margin-left: 50px;
+    margin-top: 5%;
+}
+
+#foot {
+    padding: 5px 0;
+    text-align: center;
+    background: #5cd31b;
+    color: white;
+}
+
+h2 {
+    margin: 10px 0;
+    color: white;
+    padding-left: 15px;
+}
+
+h3 {
+    margin: 0 0px;
+    padding-top: 15px;
+}
+
+
+#personedit {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    z-index: 9999;
+}
+
+
+
+
